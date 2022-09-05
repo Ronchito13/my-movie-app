@@ -7856,7 +7856,7 @@ textarea.form-control-lg {
 }
 
 .bg-custom {    
-  background-image: url("/assets/img/header-bg.jpg");
+  background-image: url("./assets/img/header-bg.jpg");
   background-size: contain;
 }
 
