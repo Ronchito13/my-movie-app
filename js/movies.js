@@ -17,9 +17,6 @@ function mostPopular(){
 
 // My Favorites
 
-
-
-
 function myFavorites(){  
     let myFav = JSON.parse(localStorage.getItem("myFavorites")); 
     if(myFav === null || myFav === undefined){
@@ -44,6 +41,9 @@ function myFavorites(){
 function truncate(str, no_words) {
     return str.split(" ").splice(0,no_words).join(" ");
 }
+
+
+// Organize Cards
 
 function setCards(data){
 
@@ -113,6 +113,8 @@ function setCards(data){
 }
 
 
+// Set Modal
+
 function setModal(data){    
     let {original_language, overview, backdrop_path, release_date, title} = data;    
     document.getElementById("movieTitle").innerText = title;
@@ -123,7 +125,7 @@ function setModal(data){
     document.getElementById("movieOriginalLanguage").innerText = original_language;
 }
 
-
+// Save to Favorites
 
 function saveToMyFavorites(){        
     let listOfMyMovies = [];
